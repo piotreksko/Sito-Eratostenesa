@@ -48,8 +48,8 @@ function getPrimes() {
     }
 
     //Input validation
-    if (maxNumber > 100000) {
-        container.innerHTML = "<div class='validation-text'>Górny zakres nie może być większy od 100000</div>"
+    if (maxNumber > 1000000) {
+        container.innerHTML = "<div class='validation-text'>Górny zakres nie może być większy od 1000000</div>"
     } else if (maxNumber < 3) {
         container.innerHTML = "<div class='validation-text'>Górny zakres nie może mieć wartości mniejszej od 3</div>"
     } else if (maxNumber < minNumber) {
@@ -75,7 +75,7 @@ function displayResults(container, recordsPerPage, primes) {
     }
 
     //Variable to be displayed in HTML
-    let primesResult = "<table class='table-fill'><tr><th>Index</th><th>Liczba pierwsza</th></tr>";
+    let primesResult = "<table class='table-fill'><tr><th>Lp.</th><th>Liczba pierwsza</th></tr>";
 
     //Loop through all records that should be shown on requested page
     for (var i = (currentPage * recordsPerPage) - recordsPerPage; i < currentPage * recordsPerPage; i++) {
@@ -108,8 +108,8 @@ function createPagination() {
         }
     })();
     (function pager1() {
-        if (currentPage > 2) {
-            paginationResult += "<div class='button' onclick='changePage(this)' data-value='" + (currentPage - 2) + "'>" + (currentPage - 2) + "</div>";
+        if (currentPage > 101) {
+            paginationResult += "<div class='button' onclick='changePage(this)' data-value='" + (currentPage - 100) + "'>" + (currentPage - 100) + "</div>";
         }
     })();
     (function pager2() {
@@ -126,8 +126,8 @@ function createPagination() {
         }
     })();
     (function pager4() {
-        if ((numPages - currentPage) > 1) {
-            paginationResult += "<div class='button' onclick='changePage(this)' data-value='" + (currentPage + 2) + "'>" + (currentPage + 2) + "</div>";
+        if ((numPages - currentPage) > 101) {
+            paginationResult += "<div class='button' onclick='changePage(this)' data-value='" + (currentPage + 100) + "'>" + (currentPage + 100) + "</div>";
         }
     })();
     (function hiddenPagesEnd() {
