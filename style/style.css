@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600");
+/* line 3, style.scss */
+html {
+  width: 100%;
+  height: 100%; }
+
+/* line 8, style.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #F1F2B5 0%, #3d72b4 100%) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+/* line 23, style.scss */
+.main-container {
+  width: 60%;
+  margin: 2% auto;
+  background-color: #fff;
+  border: none;
+  border-radius: .625rem;
+  box-shadow: 0 0.5rem 2rem rgba(90, 97, 105, 0.1), 0 0.9rem 1.4rem rgba(90, 97, 105, 0.1), 0 0.25rem 0.5rem rgba(90, 97, 105, 0.12), 0 0.1rem 0.2rem rgba(90, 97, 105, 0.1);
+  padding: 1em; }
+
+/* line 33, style.scss */
+.flex-container {
+  display: flex;
+  justify-content: center; }
+
+/* line 38, style.scss */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  width: 32vw;
+  display: inline-block; }
+
+/*-- Buttons styling --*/
+/* line 47, style.scss */
+.button {
+  padding: 10px 40px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #FFF;
+  cursor: pointer; }
+  /* line 53, style.scss */
+  .button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid; }
+  /* line 58, style.scss */
+  .button:hover {
+    -webkit-transform: translate(0px, -3px);
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s; }
+
+/* line 66, style.scss */
+#getPrimesButton {
+  background-color: #9abf7f;
+  border-bottom: 5px solid #79ad53;
+  margin-bottom: 0.5%;
+  margin-top: 1%;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  max-width: 27vw;
+  border-radius: 3px; }
+
+/* line 76, style.scss */
+#resetButton {
+  background-color: #f1c40f;
+  border-bottom: 5px solid #f39c12;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 0.5%;
+  max-width: 27vw;
+  border-radius: 3px; }
+
+/* line 85, style.scss */
+#confirmButton {
+  background-color: #aeb2ba;
+  border-bottom: 5px solid #76797f;
+  margin: 0.5% 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  padding: 6px;
+  display: inline-block;
+  max-width: 8rem;
+  border-radius: 5px; }
+
+/* line 97, style.scss */
+.pagination-container .button {
+  background-color: #74b0f2;
+  border-bottom: 5px solid #5281B4;
+  margin-bottom: 0.5%;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  padding: 6px;
+  display: inline-block;
+  max-width: 3rem; }
+
+/*-- Text styling --*/
+/* line 110, style.scss */
+h1 {
+  font-family: courier;
+  margin-top: 0;
+  margin-bottom: .3rem; }
+
+/* line 116, style.scss */
+h4 {
+  margin-top: 0;
+  margin-bottom: .2rem; }
+
+/* line 121, style.scss */
+h5 {
+  margin-top: .5rem;
+  margin-bottom: .5rem; }
+
+/* line 126, style.scss */
+.flex-container input {
+  margin-bottom: 1rem;
+  width: 80%;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  background-color: transparent; }
+
+/* line 137, style.scss */
+.button:first-child {
+  border-radius: 3px 0 0 3px; }
+
+/* line 141, style.scss */
+.buttonLast {
+  border-radius: 0 3px 3px 0; }
+
+/* line 145, style.scss */
+.focused {
+  background-color: #5281B4 !important; }
+
+/* line 149, style.scss */
+.row {
+  flex-direction: row; }
+
+/* line 153, style.scss */
+#primes {
+  padding: 6px 0;
+  margin: auto;
+  color: #818181;
+  text-align: justify;
+  text-justify: inter-word; }
+
+/* line 161, style.scss */
+.validation-text {
+  text-align: center;
+  align-content: center; }
+
+/* line 166, style.scss */
+#pageInput {
+  margin-top: 10px 0;
+  width: 3rem;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 6px; }
+
+/*--Table styling --*/
+/* line 178, style.scss */
+.table-fill {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 32vw;
+  padding: 12px 40px;
+  width: 80%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+
+/* line 190, style.scss */
+th {
+  color: #D5DDE5;
+  background: #424347;
+  border-bottom: 4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size: 14px;
+  font-weight: 100;
+  padding: 6px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align: middle; }
+  /* line 201, style.scss */
+  th:first-child {
+    border-top-left-radius: 3px; }
+  /* line 204, style.scss */
+  th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none; }
+
+/* line 210, style.scss */
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #666B85;
+  font-size: 12px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1); }
+  /* line 217, style.scss */
+  tr:hover td {
+    background: #4E5066;
+    color: #FFFFFF;
+    border-top: 1px solid #22262e; }
+  /* line 222, style.scss */
+  tr:first-child {
+    border-top: none; }
+  /* line 225, style.scss */
+  tr:last-child {
+    border-bottom: none; }
+  /* line 229, style.scss */
+  tr:nth-child(odd) td {
+    background: #EBEBEB; }
+  /* line 232, style.scss */
+  tr:nth-child(odd):hover td {
+    background: #4E5066; }
+  /* line 237, style.scss */
+  tr:last-child td:first-child {
+    border-bottom-left-radius: 3px; }
+  /* line 240, style.scss */
+  tr:last-child td:last-child {
+    border-bottom-right-radius: 3px; }
+
+/* line 246, style.scss */
+td {
+  background: #FFFFFF;
+  padding: 6px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 10px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+  width: 50%; }
+  /* line 256, style.scss */
+  td:last-child {
+    border-right: 0px; }
+
+@media only screen and (max-width: 900px) {
+  /* line 262, style.scss */
+  .table-fill {
+    max-width: 100%;
+    width: 95%; }
+
+  /* line 266, style.scss */
+  .main-container {
+    width: 90%; }
+
+  /* line 269, style.scss */
+  #getPrimesButton, #resetButton {
+    max-width: 95%; }
+
+  /* line 272, style.scss */
+  .pagination-container {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */

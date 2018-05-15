@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link href="./style/style.css" rel="stylesheet">
+      <meta charset="UTF-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta content="ie=edge" http-equiv="X-UA-Compatible">
+      <title>Sito Eratostenesa</title>
+   </head>
+   <body>
+      <div class=main-container>
+      <h1>Sito Eratostenesa</h1>
+      <h4>
+      Zakres liczb pierwszych
+      <h4>
+      <div class=flex-container>
+         <div>
+            <h5>od (min 2)</h5>
+            <div >
+               <input id="minNumber" type="text" size="8" value="2" onblur="clearViewedPage()"/><br>
+               <h4>
+               Ilość wyników na stronie
+               <h4>
+            </div>
+         </div>
+         <div >
+            <div >
+               <h5>do (max 100000)</h5>
+            </div>
+            <div >
+               <input id="maxNumber" type="text" size="8" value="100000" onblur="clearViewedPage()"/>
+               <select id='recordsPerPage' value='20' onchange="changeRecordsPerPage()">
+                  <option value='20'>20</option>
+                  <option value='50'>50</option>
+                  <option value='100'>100</option>
+                  <option value='all'>Wszystkie</option>
+               </select>
+            </div>
+         </div>
+      </div>
+      <div class="button" id="getPrimesButton" onclick="getPrimes()">
+         Pokaż liczby pierwsze
+      </div>
+      <div class="button" id="resetButton" onclick="clearResults()">
+         Wyczyść
+      </div>
+      <div id="pagination" class="pagination-container"></div>
+      <div id="primes"></div>
+      <script src="./scripts/script.js" type="text/javascript"></script>
+   </body>
+</html>
